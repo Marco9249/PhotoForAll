@@ -1,0 +1,5 @@
+[build]
+command = "pip install -r telegram_requirements.txt"
+
+[deploy]
+command = "python telegram_bot.py"

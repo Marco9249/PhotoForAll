@@ -1,0 +1,11 @@
+services:
+  - type: worker
+    name: telegram-bot
+    env: python
+    buildCommand: pip install -r telegram_requirements.txt
+    startCommand: python telegram_bot.py
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        value: "8248975275:AAFh46KmTPe6pOA7h8m2i3aEEw3GVan8JmM"
+      - key: PIXABAY_API_KEY  
+        value: "51776008-108cfd18070566ac7a699ca6e"
